@@ -18,7 +18,7 @@ def go():
 		s = requests.session()
 		res = s.get(url,headers=headers)
 		f.write(res.content)
-		if (num-10)%20==0:
+		if num%10==0:
 			time.sleep(480)
 	f.close
 
